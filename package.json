@@ -1,0 +1,43 @@
+{
+  "name": "bb-plugin-extella",
+  "version": "0.1.0",
+  "description": "Give bb agents a shared library of saved programs: search by meaning, run on your own machines, save what worked.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.0",
+    "bbPluginSdk": ">=0.4.3"
+  },
+  "bb": {
+    "name": "Extella",
+    "description": "Search saved programs by meaning, run them on your devices, save new ones for the next thread.",
+    "branding": {
+      "icon": "Boxes"
+    },
+    "server": "./server.ts",
+    "skills": [
+      "skills"
+    ]
+  },
+  "keywords": [
+    "bb-plugin",
+    "extella",
+    "agents",
+    "tools"
+  ],
+  "scripts": {
+    "test": "node --test test/host.test.mjs"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.54",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "26.6.5",
+    "better-sqlite3": "13.0.3",
+    "cron-parser": "^5.10.2",
+    "hono": "^4.13.13",
+    "typescript": "7.0.2"
+  }
+}
