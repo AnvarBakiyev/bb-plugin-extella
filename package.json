@@ -12,7 +12,7 @@
     "name": "Extella",
     "description": "Search saved programs by meaning, run them on your devices, save new ones for the next thread.",
     "branding": {
-      "icon": "Boxes"
+      "icon": "./assets/icon.svg"
     },
     "server": "./server.ts",
     "skills": [
