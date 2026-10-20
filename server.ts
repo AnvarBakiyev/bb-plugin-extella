@@ -61,7 +61,7 @@ export default async function plugin(bb: BbPluginApi) {
     description:
       "Search saved Extella programs by meaning. Returns names, descriptions and similarity (0–1). Use before writing a new script for a task.",
     instructions:
-      "Before writing a new script for a self-contained task (parse, convert, compute, fetch, report), call extella_search with a plain-language description. Reuse a program if similarity is high and the description fits.",
+      "Before writing a new script for a self-contained task (parse, convert, compute, fetch, report), call extella_search with a plain-language description. Similarity is relative: a fitting program often scores 0.4–0.5 and others score lower. Judge by the description of the top matches (read the code with extella_get when unsure), not by a fixed threshold.",
     presentation: { label: { pending: "Searching Extella programs", completed: "Searched Extella programs" } },
     parameters: z.object({
       query: z.string().min(3).describe("What the program should do, in plain words"),

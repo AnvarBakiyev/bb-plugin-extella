@@ -8,7 +8,7 @@ description: "Reuse saved programs from Extella before writing new scripts, and 
 Extella keeps programs that agents already wrote and checked. A saved program runs again without the model writing it anew.
 
 1. Before writing a script for a self-contained task, call `extella_search` with what the script should do.
-2. If a match fits (read it with `extella_get` when unsure), call `extella_run` with its parameters.
+2. If a match fits, call `extella_run` with its parameters. Similarity is relative: a fitting program often scores 0.4–0.5, so judge by the description of the top matches and read the code with `extella_get` when unsure.
 3. If nothing fits, write the script, run it, and once it gives the right answer save it with `extella_save`.
 
 Program format for `extella_save` (Python):
