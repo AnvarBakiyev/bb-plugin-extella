@@ -17,7 +17,7 @@ The `extella` skill tells the agent the order: search, reuse, and save only afte
 ## Install
 
 ```
-bb plugin install https://github.com/<owner>/bb-plugin-extella
+bb plugin install https://github.com/AnvarBakiyev/bb-plugin-extella
 ```
 
 Then in bb settings → Plugins → Extella:
